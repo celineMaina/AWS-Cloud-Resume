@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: flex;
+}
+.left-section{
+  background-color: rgb(24, 5, 109);
+  color: white;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.right-section{
+  background-color: white;
+  flex: 3;
+  padding: 5px;
+}
