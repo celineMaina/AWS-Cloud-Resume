@@ -46,7 +46,7 @@ Create your resume using HTML and CSS. You can use an IDE such as Visual Studio 
 ### 1. Create an Architecture Diagram.
 You can use tools like [draw.io](https://draw.io/) and [LucidChart](https://www.lucidchart.com/pages/) to draw a diagram that illustrates your cloud environment and how the components interact with each other. 
 #### Architecture
-(https://github.com/celineMaina/AWS-Cloud-Resume/blob/main/Cloud%20Resume%20Architecture.drawio.png)
+![Cloud Resume Architecture drawio](https://github.com/user-attachments/assets/28ebb4f3-e205-4ed0-93b7-b742b03dab8d)
 
 When a user searches for your domain name on their browser, Route 53 translates the domain name into the correct IP address and directs the request to the Cloudfront distribution. Cloudfront then quickly retrieves the resume files from the nearest edge location ensuring fast delivery. These files are stored in Amazon s3 securely and are secured by a secure HTTPS connection managed by Amazon Certificate Manager (ACM).
 
