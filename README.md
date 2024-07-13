@@ -18,6 +18,8 @@
 The Cloud Resume Challenge was created as a projects for beginners in the cloud to practice deploying resources in the cloud, so as to gain hands-on experience. It is a great way to demonstrate your understanding of the cloud, and many have landed roles as Junior Cloud Engineers due to this project. 
 The challenge aims to host a static website on AWS using ervices such as S3, CloudFront and Route 53. This guide details the steps taken to complete this challenge including code snippets, configurations, and screenshots. By following this guide, you can create and host your own cloud-based resume.
 
+**View my Resume [here](meghanmaina.buzz)
+
 ## Step-by-Step Guide.
 
 ### 1. Writing HTML and CSS Resume.
@@ -100,3 +102,16 @@ During this project, I encountered several issues:
 - **CloudFront Distribution Setup**. I encountered an issue when I tried to create my CloudFront distribution. I solved this but contacting support and requesting for a limit increase.
 
 ![Cloudfront error](https://github.com/user-attachments/assets/3d77b015-ae17-4c2f-8425-7897c8556f43)
+
+## Key Takeaways.
+From this challenge, I learned:
+- How to use various AWS services together to host a static website.
+- How to secure your site with SSL/TLS certificates.
+- How to use Route 53 for DNS management.
+
+## Resources.
+- [Cloud Resume Tutorial](https://youtu.be/NiCZSdWucZE?si=DdrygfBilOfALuY6)
+- [Hosting](https://www.hostafrica.ke/)
+
+## Outcome.
+By completing this challenge, I gained practical experience with AWS services and enhanced my understanding of cloud architecture. This documentation serves as a comprehensive guide for anyone looking to undertake the Cloud Resume Challenge.
