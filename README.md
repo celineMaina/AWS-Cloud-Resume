@@ -18,7 +18,7 @@
 The Cloud Resume Challenge was created as a projects for beginners in the cloud to practice deploying resources in the cloud, so as to gain hands-on experience. It is a great way to demonstrate your understanding of the cloud, and many have landed roles as Junior Cloud Engineers due to this project. 
 The challenge aims to host a static website on AWS using ervices such as S3, CloudFront and Route 53. This guide details the steps taken to complete this challenge including code snippets, configurations, and screenshots. By following this guide, you can create and host your own cloud-based resume.
 
-**View my Resume [here](meghanmaina.buzz)
+**View my Resume [here](meghanmaina.buzz)**
 
 ## Step-by-Step Guide.
 
