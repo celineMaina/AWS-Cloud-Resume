@@ -83,9 +83,9 @@ When a user searches for your domain name on their browser, Route 53 translates 
 You might notice that your website is not secure. To secure it, request a free certificate from Amazon Certificate Manager by following these steps:
 
 **Request a certificate in ACM**:
-    - Go to the ACM console.
-    - Click "Request a certificate".
-    - Enter your domain name and follow the validation steps.
+- Go to the ACM console.
+- Click "Request a certificate".
+- Enter your domain name and follow the validation steps.
 
 You use CloudFront to deliver your website content: [CloudFront Docs](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/)
 1. **Create a CloudFront distribution**:
@@ -100,6 +100,7 @@ You use CloudFront to deliver your website content: [CloudFront Docs](https://aw
   
 ## Challenges Faced.
 During this project, I encountered several issues:
+
 - **CloudFront Distribution Setup**. I encountered an issue when I tried to create my CloudFront distribution. I solved this but contacting support and requesting for a limit increase.
 
 ![Cloudfront error](https://github.com/user-attachments/assets/3d77b015-ae17-4c2f-8425-7897c8556f43)
