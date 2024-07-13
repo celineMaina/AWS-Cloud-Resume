@@ -55,7 +55,7 @@ When a user searches for your domain name on their browser, Route 53 translates 
 1. **Create an S3 bucket**:
    - Go to the S3 console.
     - Click "Create bucket".
-    - Enter a unique bucket name and select your region.
+    - Enter a unique bucket name and select your region. Your bucket name should be the same name as your domain.
     - Disable "Block all public access" and acknowledge the warning.
 2. **Upload your website files**:
     - Click on your bucket name.
@@ -66,6 +66,37 @@ When a user searches for your domain name on their browser, Route 53 translates 
     - Click "Edit" in the Static website hosting section.
     - Select "Enable" and set the index document to `index.html`.
 
- ### Setting up Route 53.
- 
-   
+ ### 3. Setting up Route 53.
+ Route 53 is used as a DNS provider. Make sure you have a custom domain name as free domains on platforms such as Netlify are good, but won't work in this case. Here are the steps for setting up Route 53:
+ 1. **Create a hosted zone** in Route 53:
+    - Go to the Route 53 console.
+    - Click "Create hosted zone".
+    - Enter your domain name and click "Create".
+
+2. **Update nameservers**:
+    - Go to your domain registrar.
+    - Replace the default nameservers with those provided by Route 53.
+  
+### 4. Secure your Site with ACM and Create your CloudFront Distribution.
+You might notice that your website is not secure. To secure it, request a free certificate from Amazon Certificate Manager by following these steps:
+**Request a certificate in ACM**:
+    - Go to the ACM console.
+    - Click "Request a certificate".
+    - Enter your domain name and follow the validation steps.
+
+You use CloudFront to deliver your website content: [CloudFront Docs](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/)
+1. **Create a CloudFront distribution**:
+    - Go to the CloudFront console.
+    - Click "Create Distribution".
+    - Select "Web" and enter your S3 bucket as the origin.
+    - In the "SSL Certificate" section, select the ACM certificate you created.
+
+2. **Update Route 53 records**:
+    - Go to your hosted zone in Route 53.
+    - Create an alias record that points to your CloudFront distribution.
+  
+## Challenges Faced.
+During this project, I encountered several issues:
+- **CloudFront Distribution Setup**. I encountered an issue when I tried to create my CloudFront distribution. I solved this but contacting support and requesting for a limit increase.
+
+![Cloudfront error](https://github.com/user-attachments/assets/3d77b015-ae17-4c2f-8425-7897c8556f43)
