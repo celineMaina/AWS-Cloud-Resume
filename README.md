@@ -81,6 +81,7 @@ When a user searches for your domain name on their browser, Route 53 translates 
   
 ### 4. Secure your Site with ACM and Create your CloudFront Distribution.
 You might notice that your website is not secure. To secure it, request a free certificate from Amazon Certificate Manager by following these steps:
+
 **Request a certificate in ACM**:
     - Go to the ACM console.
     - Click "Request a certificate".
